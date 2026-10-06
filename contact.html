@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Contact | Ariha Mushtaq</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23e8722a'/><stop offset='100%' stop-color='%23f59347'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text y='.9em' font-size='52' font-family='sans-serif' font-weight='700' fill='white' x='50%' text-anchor='middle' dy='8'>AM</text></svg>">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<div class="orbs"><div class="orb orb1"></div><div class="orb orb2"></div><div class="orb orb3"></div></div>
+<div id="preloader"><div class="pl-inner"><div class="pl-monogram">AM</div><div class="pl-bar"><div class="pl-fill"></div></div><p class="pl-text">Loading...</p></div></div>
+<nav class="navbar">
+  <div class="nav-logo">Ariha<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="skills.html">Skills</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a><a href="about.html">About</a>
+  <a href="skills.html">Skills</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-hero">
+  <span class="section-label">Let's Connect</span>
+  <h1>Get In <span>Touch</span></h1>
+  <p>Open to internships, entry-level roles, and collaborations. I'd love to hear from you!</p>
+</section>
+
+<section class="contact-section">
+  <div class="container contact-grid">
+
+    <div class="contact-left fade-up">
+      <h2>Let's <span>Talk</span></h2>
+      <p>Whether you're looking for a motivated marketing intern, a sales representative, or just want to connect — I'm always open to new opportunities and conversations.</p>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-phone"></i></div>
+          <div><p class="cc-label">Phone</p><a href="tel:+923316468009">0331-6468009</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+          <div><p class="cc-label">Email</p><a href="mailto:arihamushtaq@gmail.com">arihamushtaq@gmail.com</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><p class="cc-label">Location</p><p>Okara, Pakistan</p></div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fas fa-language"></i></div>
+          <div><p class="cc-label">Languages</p><p>Urdu (Native) · English (Good)</p></div>
+        </div>
+      </div>
+      <div class="avail-badge">
+        <span class="avail-dot"></span> Open to Internships & Entry-Level Roles
+      </div>
+    </div>
+
+    <div class="form-card fade-up">
+      <h3>Send a Message</h3>
+      <form id="contactForm" action="https://formspree.io/f/mjgjopyw" method="POST">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" name="fname" placeholder="e.g. Sara Ahmed"/>
+          <p class="form-error" id="nameErr"></p>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="femail" placeholder="your@email.com"/>
+          <p class="form-error" id="emailErr"></p>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select name="subject">
+            <option value="">Select a topic...</option>
+            <option>Internship Opportunity</option>
+            <option>Job Offer</option>
+            <option>Collaboration</option>
+            <option>General Inquiry</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="fmsg" rows="5" placeholder="Tell me about the opportunity or your message..."></textarea>
+          <p class="form-error" id="msgErr"></p>
+        </div>
+        <button type="submit" class="btn-submit">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <div class="form-success" id="formSuccess">
+          ✅ Message sent! I'll get back to you as soon as possible.
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 Ariha Mushtaq · Okara, Pakistan</p>
+  <div class="footer-links">
+    <a href="mailto:arihamushtaq@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="tel:+923316468009"><i class="fas fa-phone"></i></a>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
